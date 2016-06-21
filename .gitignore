@@ -1,0 +1,13 @@
+./dist
+./node_modules
+*.map
+
+./Scripts/**.js
+./Scripts/**.d.ts
+
+
+*.suo
+./.vs
+./server.js
+./server.d.ts
+./.ntvs_analysis.dat.tmp
