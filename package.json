@@ -8,6 +8,7 @@
     "email": "mail@dominicbisset.co.uk"
   },
   "dependencies": {
+    "bluebird": "^3.4.1",
     "bookshelf": "^0.9.5",
     "express": "^4.14.0",
     "gb-game-models": "dominicbisset/GBGameModels",

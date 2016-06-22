@@ -33,15 +33,42 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Scripts\tsd.json" />
+    <TypeScriptCompile Include="config.ts" />
+    <TypeScriptCompile Include="Scripts\DB\bookshelf.ts" />
+    <TypeScriptCompile Include="Scripts\DB\knex.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Team.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Season.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Character.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bluebird\bluebird.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\bookshelf\bookshelf.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\create-error\create-error.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knex\knex.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\lodash\lodash-3.10.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\tsd.d.ts" />
+    <TypeScriptCompile Include="seeds\initial.ts" />
     <TypeScriptCompile Include="server.ts" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="migrations\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Scripts\DB\" />
+    <Folder Include="Scripts\Models\" />
     <Folder Include="Scripts\typings\" />
+    <Folder Include="Scripts\typings\bluebird\" />
+    <Folder Include="Scripts\typings\bookshelf\" />
+    <Folder Include="Scripts\typings\create-error\" />
+    <Folder Include="Scripts\typings\knex\" />
+    <Folder Include="Scripts\typings\lodash\" />
     <Folder Include="Scripts\typings\node\" />
+    <Folder Include="seeds\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="knexfile.js" />
+    <Compile Include="migrations\20160621222555_initial.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
