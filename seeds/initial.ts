@@ -21,6 +21,7 @@ var createSeasons = function () {
     return seasons.del()
         .then(function () {
             return seasons.insert(s1).then(function () {
+
                 return seasons.insert(s2);
             });
         });
