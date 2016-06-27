@@ -1,5 +1,4 @@
-﻿import * as Bookshelf from "bookshelf";
-import {db} from "../DB/bookshelf";
+﻿import {db} from "../DB/bookshelf";
 import {tableNames} from "../../config";
 
 console.log("Reading the season model");

@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var bookshelf_1 = require("../DB/bookshelf");
 var config_1 = require("../../config");
+var index_1 = require("./index");
 console.log("Reading the character model");
 var Character = (function (_super) {
     __extends(Character, _super);
@@ -19,6 +20,11 @@ var Character = (function (_super) {
         enumerable: true,
         configurable: true
     });
+    ;
+    Character.prototype.variants = function () {
+        return this.hasMany(index_1.Player, "characterId");
+    };
+    ;
     return Character;
 }(bookshelf_1.db.Model));
 exports.Character = Character;

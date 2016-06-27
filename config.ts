@@ -1,5 +1,4 @@
-﻿
-let path = require("path");
+﻿let path = require("path");
 export let dbFile = path.join(__dirname, "GBDB.db");
 console.log("dbfile:", dbFile);
 export let modelsFolder = path.join(__dirname, "Scripts","Models");
@@ -14,10 +13,14 @@ export let tableNames = {
     team: "Team",
     character: "Character",
     player: "Player",
-    characterPlay: "CharacterPlay",
-    play: "Play",
-    playbookResult: "PlaybookResult",
+    ability: "Ability",
     tag: "Tag",
+    playbookResult: "PlaybookResult",
+    playerAbility: "PlayerAbility",
+    playerTag: "PlayerTag",
+    playerTeam: "PlayerAbility",
+    icySpongeLevel: "IcySpongeLevel",
+
 }
 
 export let port = 3001;

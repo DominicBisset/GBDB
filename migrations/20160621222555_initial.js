@@ -24,8 +24,9 @@ exports.up = function (knex, Promise) {
             table.increments("id");
             table.string("name").notNullable();
             table.text("abilityText").notNullable();
-            table.integer("abilityType").notNullable();
-            //TODO: handle parameterised play
+			table.integer("abilityType").notNullable
+			table.boolean("hasParameter").nullable();
+
             //Additional Fields for character plays
             table.integer("infCost").nullable();
             table.integer("gbCost").nullable();
@@ -86,7 +87,8 @@ exports.up = function (knex, Promise) {
             console.log("creating table:", config.tableNames.playerAbility);
             table.increments("id");
             table.integer("playerId").references("id").inTable(config.tableNames.player).notNullable();
-            table.integer("abilityId").references("id").inTable(config.tableNames.ability).notNullable();
+			table.integer("abilityId").references("id").inTable(config.tableNames.ability).notNullable();
+			table.string("parameterValue").nullable();
 		}),
 		knex.schema.createTableIfNotExists(config.tableNames.playerTeam, function (table) {
 			console.log("creating table:", config.tableNames.playerTeam);

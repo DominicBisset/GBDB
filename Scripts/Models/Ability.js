@@ -6,25 +6,21 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var bookshelf_1 = require("../DB/bookshelf");
 var config_1 = require("../../config");
-var index_1 = require("./index");
-console.log("Reading the team model");
-var Team = (function (_super) {
-    __extends(Team, _super);
-    function Team() {
+console.log("Reading the tag model");
+var Ability = (function (_super) {
+    __extends(Ability, _super);
+    function Ability() {
         _super.apply(this, arguments);
     }
-    Object.defineProperty(Team.prototype, "tableName", {
+    Object.defineProperty(Ability.prototype, "tableName", {
         get: function () {
-            return config_1.tableNames.team;
+            return config_1.tableNames.ability;
         },
         enumerable: true,
         configurable: true
     });
     ;
-    Team.prototype.seasonIntroduced = function () {
-        return this.belongsTo(index_1.Season, "seasonIntroducedNo");
-    };
-    return Team;
+    return Ability;
 }(bookshelf_1.db.Model));
-exports.Team = Team;
-//# sourceMappingURL=Team.js.map
+exports.Ability = Ability;
+//# sourceMappingURL=Ability.js.map

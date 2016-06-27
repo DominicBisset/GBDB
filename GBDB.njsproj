@@ -20,7 +20,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <EnableTypeScript>true</EnableTypeScript>
@@ -37,6 +37,12 @@
     <TypeScriptCompile Include="config.ts" />
     <TypeScriptCompile Include="Scripts\DB\bookshelf.ts" />
     <TypeScriptCompile Include="Scripts\DB\knex.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Ability.ts" />
+    <TypeScriptCompile Include="Scripts\Models\IcySpongeLevel.ts" />
+    <TypeScriptCompile Include="Scripts\Models\PlaybookResult.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Tag.ts" />
+    <TypeScriptCompile Include="Scripts\Models\index.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Player.ts" />
     <TypeScriptCompile Include="Scripts\Models\Team.ts" />
     <TypeScriptCompile Include="Scripts\Models\Season.ts" />
     <TypeScriptCompile Include="Scripts\Models\Character.ts" />
