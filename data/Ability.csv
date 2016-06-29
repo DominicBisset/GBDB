@@ -1,0 +1,21 @@
+id;name;abilityText;abilityType;hasParameter;infCost;gbCost;rng;zone;zoneSize;sustain
+1;Cloud Jumper;'Once per turn during its activation, this model may choose 
+an ongoing-effect AOE within [4”]. This model may be placed anywhere within the chosen ongoing-effect AOE.';1;False;;;;;;
+2;Momentous Inspiration;[4" Aura] While within this aura, friendly models that generate one or more successful hits when using a Character Play that causes damage, additionally generate [1] MP.;1;False;;;;;;
+3;Smoke Bomb;'Models within this ongoing-effect AOE benefit from cover. 
+This Character Play may only be used once per turn.';2;False;1;;8;1;3;
+4;Intensify;Enemy models that are suffering conditions and are within the pulse suffer [2] DMG.;2;False;2;1;-1;3;3;
+5;Rabid Animal;Target enemy model suffers [-4”/-4”] MOV and the poison condition.;2;False;;2;-2;;;True
+6;Elemental Infusion;'If this model makes an Attack against an enemy model that is suffering from one or more of the following conditions, the following cumulative benefits apply to the Attack against that model:
+burning: [+1] DMG to Playbook damage results.
+poison: [+2] TAC.
+bleed: Target model suffers [-1] ARM.';1;False;;;;;;
+7;Alchemy Mix;'Choose an ongoing-effect AOE that was positioned by a friendly model. Position a new [3”] ongoing-effect AOE in contact with the chosen AOE. The new AOE is a duplicate of 
+the chosen ongoing-effect AOE. This Character Play may only be used once per turn.';2;False;1;;8;;;
+8;Chemical Breeze;Choose an ongoing-effect AOE that was positioned by a friendly model. The chosen AOE may be positioned within [4”] of its current location. Models within the AOE when it is positioned are considered to have entered the AOE. This Character Play may only be used once on each ongoing-effect AOE per turn.;2;False;1;;6;;;
+9;Unpredictable Movement;Once per turn when an enemy model ends an Advance in this model’s melee zone, this model may immediately make a [2”]  Dodge.;1;False;;;;;;
+10;Chemical Shower;Position two [3”] AOEs within [8”] of this model. Models within one or more of these AOEs immediately suffer [3] condition-damage. Models entering or ending their activation in either of these ongoing-effect AOEs suffer the poison condition.;4;False;;;;;;
+11;Furious;This model may Charge without spending Influence.;1;False;;;;;;
+12;Chemical Frenzy;This model gains [+1] DMG to Playbook damage results when targeting an enemy model suffering at least one condition.;1;False;;;;;;
+13;Deteriorating;At the end of this model’s activation this model suffers the stated DMG.;1;True;;;;;;
+14;Glorious Achievement;If this model inflicts the taken-out condition on an enemy model, this model may immediately suffer the taken-out condition and reduce its HP to [0]. The friendly team gains an additional [+2] VP. ;3;False;;;;;;

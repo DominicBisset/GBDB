@@ -18,7 +18,7 @@ export let tableNames = {
     playbookResult: "PlaybookResult",
     playerAbility: "PlayerAbility",
     playerTag: "PlayerTag",
-    playerTeam: "PlayerAbility",
+    playerTeam: "PlayerTeam",
     icySpongeLevel: "IcySpongeLevel",
 
 }
