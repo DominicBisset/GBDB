@@ -20,7 +20,7 @@ export let tableNames = {
     playerTag: "PlayerTag",
     playerTeam: "PlayerTeam",
     icySpongeLevel: "IcySpongeLevel",
-
+    resultEffect: "ResultEffect"
 }
 
-export let port = 3001;
+export let port = 3002;

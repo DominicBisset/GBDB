@@ -14,15 +14,14 @@ exports.tableNames = {
     team: "Team",
     character: "Character",
     player: "Player",
-    characterPlay: "CharacterPlay",
     ability: "Ability",
-    playbookResult: "PlaybookResult",
-	icySpongeLevel: "IcySpongeLevel",
     tag: "Tag",
+    playbookResult: "PlaybookResult",
+    playerAbility: "PlayerAbility",
     playerTag: "PlayerTag",
-	playerAbility: "PlayerAbility",
-	playerTeam: "PlayerTeam"
-
+    playerTeam: "PlayerTeam",
+    icySpongeLevel: "IcySpongeLevel",
+    resultEffect: "ResultEffect"
 };
 exports.port = 3001;
 //# sourceMappingURL=config.js.map

@@ -49,9 +49,21 @@ app.get('/test', function (req, res) {
     });
 });
 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+
+app.get('/player', function (req, res) {
+    return Models.Player.fetchAll().then(function (players) {
+        res.json(players);
+    });
+});
 
 app.get('/player/:id', function (req, res) {
-    return new Models.Player({ id: parseInt(req.params.id) }).fetch({ withRelated: ['seasonIntroduced', 'seasonRetired', 'character', 'icySpongeLevels', 'playsFor', 'playbook', 'abilities'] }).then(function (player) {
+    return new Models.Player({ id: parseInt(req.params.id) }).fetch({ withRelated: ['seasonIntroduced', 'seasonRetired', 'character', 'icySpongeLevels', 'playsFor', 'playbook', 'abilities', 'playbook.effects'] }).then(function (player) {
         res.json(player);
     });
 });

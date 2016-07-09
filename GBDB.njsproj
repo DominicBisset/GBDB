@@ -40,6 +40,7 @@
     <TypeScriptCompile Include="Scripts\Models\Ability.ts" />
     <TypeScriptCompile Include="Scripts\Models\IcySpongeLevel.ts" />
     <TypeScriptCompile Include="Scripts\Models\PlaybookResult.ts" />
+    <TypeScriptCompile Include="Scripts\Models\ResultEffect.ts" />
     <TypeScriptCompile Include="Scripts\Models\Tag.ts" />
     <TypeScriptCompile Include="Scripts\Models\index.ts" />
     <TypeScriptCompile Include="Scripts\Models\Player.ts" />

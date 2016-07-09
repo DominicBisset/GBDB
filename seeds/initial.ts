@@ -37,31 +37,40 @@ var createTeams = function () {
         let teamList: Array<GBGameModels.Team> = [
             {
                 name: "Fishermen",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Butchers",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Brewers",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Masons",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Alchemists",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Morticians",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Engineers",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Union",
-                seasonIntroducedNo: s1.seasonNo
+                seasonIntroducedNo: s1.seasonNo,
+                logoImageUri: ""
             }, {
                 name: "Hunters",
-                seasonIntroducedNo: s2.seasonNo
+                seasonIntroducedNo: s2.seasonNo,
+                logoImageUri: ""
             }];
         return teams.del()
             .then(function () {

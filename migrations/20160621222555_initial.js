@@ -18,6 +18,7 @@ exports.up = function (knex, Promise) {
             table.increments("id");
             table.string("name").notNullable();
             table.integer("seasonIntroducedNo").references("seasonNo").inTable(config.tableNames.season).notNullable();
+            table.string("logoImageUri").notNullable();
         }),
         knex.schema.createTableIfNotExists(config.tableNames.ability, function (table) {
             console.log("creating table:", config.tableNames.ability);
@@ -61,6 +62,11 @@ exports.up = function (knex, Promise) {
             table.integer("health").notNullable();
             table.integer("baseSize").notNullable();
             table.integer("meleeZone").notNullable();
+
+            table.string("playerImageUri").notNullable();
+            table.string("modelImageUri").notNullable();
+            table.string("cardFrontImageUri").notNullable();
+            table.string("cardBackImageUri").notNullable();
         }),
 		knex.schema.createTableIfNotExists(config.tableNames.icySpongeLevel, function (table) {
 			console.log("creating table:", config.tableNames.icySpongeLevel);
@@ -74,12 +80,16 @@ exports.up = function (knex, Promise) {
             table.integer("playerId").references("id").inTable(config.tableNames.player).notNullable();
             table.integer("row").notNullable();
             table.integer("col").notNullable();
+        }),
+        knex.schema.createTableIfNotExists(config.tableNames.resultEffect, function (table) {
+            console.log("creating table:", config.tableNames.resultEffect);
+            table.increments("id");
+            table.integer("resultId").references("id").inTable(config.tableNames.playbookResult).notNullable();
             table.integer("resultType").notNullable();
             table.integer("magnitude").notNullable();
         }),
         knex.schema.createTableIfNotExists(config.tableNames.playerTag, function (table){
-            console.log("creating table:", config.tableNames.playerTag);
-            table.increments("id");
+           table.increments("id");
             table.integer("playerId").references("id").inTable(config.tableNames.player).notNullable();
             table.integer("tagId").references("id").inTable(config.tableNames.tag).notNullable();
         }),
