@@ -99,7 +99,8 @@ declare module 'bookshelf' {
 			count(column? : string, options? : SyncOptions) : Promise<number>;
 			destroy(options? : DestroyOptions) : Promise<T>;
 			fetch(options? : FetchOptions) : Promise<T>;
-			fetchAll(options? : FetchAllOptions) : Promise<Collection<T>>;
+			//fetchAll(options? : FetchAllOptions) : Promise<Collection<T>>;
+			fetchAll(options? : FetchOptions) : Promise<Collection<T>>;
 			hasMany<R extends Model<any>>(target : {new(...args : any[]) : R}, foreignKey? : string) : Collection<R>;
 			hasOne<R extends Model<any>>(target : {new(...args : any[]) : R}, foreignKey? : string) : R;
 			load(relations : string|string[], options? : LoadOptions) : Promise<T>;
